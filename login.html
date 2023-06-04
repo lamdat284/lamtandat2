@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT MilkTea</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <a href="index.html" class="logo"> <i class="fa-solid fa-mug-hot"></i>IT MilkTea</a>
+
+        <nav class="navbar">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="cart.html">Shopping Cart</a>
+        </nav>
+        <div class="icons">
+            <i class="fa-solid fa-bars" id="menu-bars"></i>
+            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            <a class="fa-solid fa-cart-shopping" id="cart-icon"></a>
+            <a class="fa-solid fa-user" id="login-icon"></a>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="text" id="search-box" placeholder="Search here...">
+            <label for="search-box" class="fa fa fa-search"> </label>
+        </form>  
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="anh1.png" alt="">
+                <div class="content">
+                    <h3>Tra Trai Cay</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">X</span>
+                    <span class="price">25.00k</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="anh2.png" alt="">
+                <div class="content">
+                    <h3>Tra Trai Cay</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">X</span>
+                    <span class="price">25.00k</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="anh3.png" alt="">
+                <div class="content">
+                    <h3>Tra Trai Cay</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">X</span>
+                    <span class="price">25.00k</span>
+                </div>
+            </div> 
+    
+            <h3 class="total">total: <span>75.00k</span></h3>
+            <a href="cart.html" class="btn">checkout cart</a>
+        </div> 
+
+        <form action="" class="login-form">
+            <h3>Login form</h3>
+            <input type="text" placeholder="Enter your email" class="box">
+            <input type="text" placeholder="Enter your password" class="box">
+            <div class="remember">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <a href="index.html">  <input type="submit" value="login now" class="btn"></a>        
+            <p>forget password? <a href="login.html">click here</a></p>
+            <p>don't have an account ? <a href="login.html">create account</a></p>
+        </form>
+    
+    </header>
+  
+
+    <login>
+        <div class="container">
+            <div class="forms">
+                <div class="form login">
+                    <span class="title">Login</span>
+
+                    <form action="">
+                        <div class="input-field">
+                            <input type="text" placeholder="Enter your email" required>
+                            <i class="fa-regular fa-envelope icon"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="password" placeholder="Enter your password" required>
+                            <i class="fa-solid fa-lock icon"></i>
+                            <i class="fa-regular fa-eye-slash showHidePw"></i>
+                        </div>            
+                        
+                        <div class="checkbox-text">
+                            <div class="checkbox-content">
+                                <input type="checkbox" id="logCheck">
+                                <label for="logCheck" class="text">Remember me</label>
+                            </div>
+                            <a href="#" class="text">Forgot password?</a>
+                        </div>
+
+                        <div class="input-field button">
+                            
+                            <a href="index.html"><input type="button" value="Login Now" required> </a>                       
+                        </div>
+                    </form>
+
+                    <div class="login-signup">
+                        <span class="text">Not a member?
+                            <a href="#" class="text signup-link">Regist now</a>
+                        </span>
+                    </div>
+                </div>
+
+
+                <!-- Registration form -->
+                <div class="form signup">
+                    <span class="title">Registration</span>
+
+                    <form action="">
+                        <div class="input-field">
+                            <input type="text" placeholder="Enter your email" required>
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="text" placeholder="Enter your email" required>
+                            <i class="fa-regular fa-envelope icon"></i>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="password" class="password" placeholder="Enter your password" required>
+                            <i class="fa-solid fa-lock icon"></i>                         
+                        </div>   
+
+                        <div class="input-field">
+                            <input type="password" class="password" placeholder="Enter your password" required>
+                            <i class="fa-solid fa-lock icon"></i>
+                            <i class="fa-regular fa-eye-slash showHidePw"></i>
+                        </div>            
+                        
+                        <div class="checkbox-text">
+                            <div class="checkbox-content">
+                                <input type="checkbox" id="logCheck">
+                                <label for="logCheck" class="text">Remember me</label>
+                            </div>
+                            <a href="#" class="text">Forgot password?</a>
+                        </div>
+
+                        <div class="input-field button">
+                            <a href="index.html"><input type="button" value="Login Now" required> </a>                      
+                        </div>
+                    </form>
+
+                    <div class="login-signup">
+                        <span class="text">A member?
+                            <a href="#" class="text login-link">Signup now</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </login>
+
+    
+     
+
+    <!-- home section starts -->
+    <footer>
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Link</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="cart.html">Shopping Cart</a>
+            </div>
+            <div class="box">
+                <h3>Open Hours</h3>
+                <a href=""> <i class="fa-solid fa-clock"></i> Mon-Tue: 9am - 22pm</a>
+                <a href=""><i class="fa-solid fa-clock"></i> Fri-Sun: 7am - 23p</a>
+            </div>
+            <div class="box">
+                <h3>Telephone<h3>
+                <a href=""><i class="fa-solid fa-phone"></i> 0856414838</a>
+                <a href=""><i class="fa-solid fa-phone"></i> 0944806780</a>
+            </div>
+            <div class="box">
+                <h3>Contact us</h3>
+                <div class="footer-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i> Facebook</a>
+                    <a href=""><i class="fa-brands fa-instagram"></i> Instagram</a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i> TikTok</a>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+  
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="login.js"></script>
+  
+</body>
+</html>
+<!-- /* serch form  */
+header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    padding: 0 1.5rem;
+}
+header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color:var(--black);
+    cursor: pointer;
+}
+header .search-form label:hover{
+    color: var(--green);
+}
+header .search-form.active{
+    right: 2rem;
+    transition: all 0.5s;
+} -->
